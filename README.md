@@ -7,7 +7,7 @@
 
 #### 该程序仅为验证技术实现请勿用于商业目的!
 
-#### 注: 完整的步骤在[说明文档.docx](说明文档.doc )中
+#### 注: 完整的步骤在[说明文档.docx](https://github.com/migraine-sudo/ClassicKiller/blob/master/说明文档.docx)中
 
 ## 0x01环境配置
 
