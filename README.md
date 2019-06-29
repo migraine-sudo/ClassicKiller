@@ -61,7 +61,7 @@ PyCharm-Open在目录中找到解压好的Classic Killer2.0
 
 ## 0x03程序接口
 
-Click接口
+### Click接口
 
 程序封装了Click接口，将点击操作封装为方法。
 实现了 ‘点击下一题’，‘点击选项’ 等功能的自动化
