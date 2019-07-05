@@ -1,0 +1,25 @@
+1558775982693	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\肖临风\\AppData\\Local\\Temp\\rust_mozprofile.43VSQ8Mj0Tzf"
+1558775986555	Marionette	INFO	Listening on port 4496
+1558775987019	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Child 49384, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 49384, Chrome_C[Child 63180, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 63180, C[GPU
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+hannel_win.cc, line 346
+[Child 53864, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 53864, [GPU 2274
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+c/chrome/common/ipc_channel_win.cc, line 346
+[Child 16828[GPU 
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+l error: cannot send/recv
+
+ed after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+[GPU 29020, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/i
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+ageChannel::SendAndWait] Error: Channel error: cannot send/recv
+

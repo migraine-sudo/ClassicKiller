@@ -1,0 +1,43 @@
+1562340345175	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\肖临风\\AppData\\Local\\Temp\\rust_mozprofile.yP40p6Qe3ffS"
+1562340347750	Marionette	INFO	Listening on port 14137
+1562340347960	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Child 408, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 17960[, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 17960,[GPU 3140, Ch
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+hannel_win.cc, line 346
+[Child 4696, Chrome_ChildThread] [Child 15764, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 15764, Chr[Child 11920, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 11920, Chrom*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+[GPU 24200, Chro
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+PU 2880, Chrome_ChildThread] WARNING: pipe 
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+[Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+ild 16488, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 22292, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 22292, Chrome_ChildTh*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+[GPU 24892, Chrome_ChildThread] WARNING: 
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+cc, line 346
+[Child 11952,[Child 14684, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 14684, [GPU 8284
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+source://devtools/shared/transport/transport.js :: send :: line 775\"  data: no]: send@resource://devtools/shared/base-loader.js -> resource://devtools/shared/transport/transport.js:775:9\nsend@resource://devtools/shared/base-loader.js -> resource://devtools/server/main.js:1476:5\n_sendEvent@resource://devtools/shared/base-loader.js -> resource://devtools/shared/protocol.js:984:5\nActor/<@resource://devtools/shared/base-loader.js -> resource://devtools/shared/protocol.js:958:40\nemit@resource://devtools/shared/base-loader.js -> resource://devtools/shared/event-emitter.js:178:37\nemit@resource://devtools/shared/base-loader.js -> resource://devtools/shared/event-emitter.js:255:29\n_emitNewMutations@resource://devtools/shared/base-loader.js -> resource://devtools/server/actors/inspector/walker.js:1596:5\nthrottle/<@resource://devtools/shared/base-loader.js -> resource://devtools/shared/throttle.js:45:16\nqueueMutation@resource://devtools/shared/base-loader.js -> resource://devtools/server/actors/inspector/walker.js:1579:7\nonMutations@resource://devtools/shared/base-loader.js -> resource://devtools/server/actors/inspector/walker.js:1672:7\n"
+[Exception... "Unexpected error"  nsresult: "0x8000ffff (NS_ERROR_UNEXPECTED)"  location: "JS frame :: resource://devtools/shared/base-loader.js -> resource://devtools/shared/transport/transport.js :: send :: line 775"  data: no]: send@resource://devtools/shared/base-loader.js -> resource://devtools/shared/transport/transport.js:775:9
+send@resource://devtools/shared/base-loader.js -> resource://devtools/server/main.js:1476:5
+_sendEvent@resource://devtools/shared/base-loader.js -> resource://devtools/shared/protocol.js:984:5
+Actor/<@resource://devtools/shared/base-loader.js -> resource://devtools/shared/protocol.js:958:40
+emit@resource://devtools/shared/base-loader.js -> resource://devtools/shared/event-emitter.js:178:37
+emit@resource://devtools/shared/base-loader.js -> resource://devtools/shared/event-emitter.js:255:29
+_emitNewMutations@resource://devtools/shared/base-loader.js -> resource://devtools/server/actors/inspector/walker.js:1596:5
+throttle/<@resource://devtools/shared/base-loader.js -> resource://devtools/shared/throttle.js:45:16
+queueMutation@resource://devtools/shared/base-loader.js -> resource://devtools/server/actors/inspector/walker.js:1579:7
+onMutations@resource://devtools/shared/base-loader.js -> resource://devtools/server/actors/inspector/walker.js:1672:7
+
