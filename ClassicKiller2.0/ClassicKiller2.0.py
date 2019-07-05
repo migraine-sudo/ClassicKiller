@@ -3,8 +3,8 @@ from output.printf import printf
 from Login.Login import Login
 from GetAnswer.GetAnswer import Answer
 from Information.Information import PrintInformation
-
-
+import thread
+import time
 
 
 def logo():
@@ -30,6 +30,10 @@ def Model():
     Model=raw_input("Please Choice Model<<")
     return Model
 
+def ModelOne(browser,paperid):
+    # 调用登陆模块
+        A = Answer()
+        A.GetAnswer(browser, paperid)
 
 def main():
     # 打印Logo
@@ -38,26 +42,32 @@ def main():
     while ifContinue:
         model = Model()
         if model=='1':#常规模式
-            #调用登陆模块
             username = raw_input("Please input your username<<")
             password = raw_input("password<<")
             while (True):
                 printf("Setting Browser...Please Wait", "purple")
-                try :
-                    browser = Login(username,password)
-                except :
+                try:
+                    browser = Login(username, password)
+                except:
                     BaseException
                     print("Wrong password!")
                     username = raw_input("Please reinput your username<<")
                     password = raw_input("password<<")
                     continue
 
-                paperid = raw_input("Please input the ID of your paper(enter 0 to exit)<<")
-                if paperid=='0':
+                printf("enter 0 to exit","red")
+                paperid = raw_input("Please input the ID of your paper<<")
+                if paperid == '0':
                     break
-                #创建解答模块的实例
-                A=Answer()
-                A.GetAnswer(browser,paperid)
+                # 创建解答模块的实例
+                #多线程2019.7.5
+                try:
+                    thread.start_new_thread(ModelOne,(browser,paperid))
+                    printf("The Thread is Working ...")
+                    time.sleep(1)
+                except:
+                    printf("Thread Error:unable to start thread","red")
+
         if model=='2':
             printf("Warning ,this models is still in test!")
             username = raw_input("Please input your username<<")

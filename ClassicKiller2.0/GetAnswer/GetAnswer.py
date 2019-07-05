@@ -71,33 +71,34 @@ class Answer:
         reader=csv.reader(csvFile)
         i=0
         answer=[]
+        Wrongnumber=0
         for qu in csvFile:
             answer.append(qu)
         checksum=0
         for i in range(100):#遍历题目
             for qu in answer:
                     if question_list[i] in qu:
-                        print "match"+str(i)
+                        #print "match"+str(i)
                         checksum=0
                         for x in qu: #提取答案
                             if 'A'<=x and x<='E':
                                 checksum=1
                                 #print "i="+str(i)
-                                print "name="+option_name_list[i]
+                                #print "name="+option_name_list[i]
                                 if x == 'A':
-                                    print "value="+option_value_list[i]
+                                    #print "value="+option_value_list[i]
                                     Click_Value(self.browser,option_value_list[i])
                                 if x == 'B':
-                                    print "value=" + str(int(option_value_list[i])+1)
+                                    #print "value=" + str(int(option_value_list[i])+1)
                                     Click_Value(self.browser,str(int(option_value_list[i])+1))
                                 if x == 'C':
-                                    print "value=" + str(int(option_value_list[i])+2)
+                                    #print "value=" + str(int(option_value_list[i])+2)
                                     Click_Value(self.browser,str(int(option_value_list[i]) + 2))
                                 if x == 'D':
-                                    print "value=" + str(int(option_value_list[i])+3)
+                                    #print "value=" + str(int(option_value_list[i])+3)
                                     Click_Value(self.browser,str(int(option_value_list[i]) + 3))
                                 if x == 'E' and i>60:
-                                    print "value=" + str(int(option_value_list[i])+4)
+                                    #print "value=" + str(int(option_value_list[i])+4)
                                     Click_Value(self.browser,str(int(option_value_list[i]) + 4))
                                 #selenium.common.exceptions.NoSuchElementException: Message: Unable to locate element: [id="143517"]
 
@@ -111,6 +112,7 @@ class Answer:
 
             elif checksum==0 and i!=100:
                 Click_Value(self.browser, str(int(option_value_list[i]) + 1))#如果没搜到答案，选B
+                Wrongnumber=Wrongnumber+1
                 sleep(0.1)
                 try:
                     Click_Next(self.browser)#下一题
@@ -118,6 +120,7 @@ class Answer:
                     BaseException
             else:
                 printf ("finish!",'purple')
+                printf ("WrongNumber="+Wrongnumber,"purple")
 
 
 

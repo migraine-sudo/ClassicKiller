@@ -1,22 +1,23 @@
-1562304074658	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\肖临风\\AppData\\Local\\Temp\\rust_mozprofile.8Lnc3aWRZxnI"
-1562304078376	Marionette	INFO	Listening on port 3785
-1562304078591	Marionette	WARN	TLS certificate errors will be ignored for this session
-JavaScript error: http://ibook.cslg.cn/Home/Reading, line 257: TypeError: $(...).mCustomScrollbar is not a function
-[Child 11076, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel[Child 10740, Chrome_ChildT_whiread] Wn.cc, Aline 3R46
-NI[Child 11076, Chrome_ChildThNG: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
-[Child 10740[GPU 13028
+1562320377103	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\肖临风\\AppData\\Local\\Temp\\rust_mozprofile.ymRkoqqAhS2w"
+1562320379662	Marionette	INFO	Listening on port 9019
+1562320380324	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Child 24036, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ip[Child 25684, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Chi[Cldhild 24284, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 24284, Chrome_ChildThrea[Child 2244, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 2244, Ch*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+[GPU 22172, Chr
 ###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
 
-.cc, line 346
-[Child 13372, Chrome_Chil[Parent 14340, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
-[Child 3032, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
-[Child 3032, Chrome_*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+l error: cannot send/recv
 
+dThread] WARNING: pipe [GPU 22724, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel
 ###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
 
- (indicating failure)
+] Error: Channel error: cannot send/recv
 
-IPDL protocol error: Handler returned error code!
+el error: cannot send/recv
+
+ror code!
 
 ###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
 
