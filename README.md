@@ -101,6 +101,9 @@ browser.find_element("id",value).click() #因为源码中id和value值相同
 修正了Click_Test函数查找按钮的偏差
 
 ### 2019.7.5
+
+增加了多线程部分，提高程序使用效率。
+
 增加了try catch部分，修复了程序昨晚题目崩溃的现象。
 
 同时优化了操作界面的友好度
