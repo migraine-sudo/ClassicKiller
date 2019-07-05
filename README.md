@@ -93,12 +93,17 @@ browser.find_element("id",value).click() #因为源码中id和value值相同
 
 
 ## 0x04更新
+
 ### 2019.6.29
 网站更新了之后，页面多了两个lo标签，导致程序查找选项出错。
 修改get_option_name函数报错
 
 修正了Click_Test函数查找按钮的偏差
 
+### 2019.7.5
+增加了try catch部分，修复了程序昨晚题目崩溃的现象。
+
+同时优化了操作界面的友好度
 
 ### 未来展望
 增加try catch部分，防止程序崩溃。
