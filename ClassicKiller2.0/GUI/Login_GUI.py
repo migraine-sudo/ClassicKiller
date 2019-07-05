@@ -41,7 +41,7 @@ def main():
 def callback():
         username=entry1.get()
         password=entry2.get()
-        print "Hello "+username+"!"
+        print "Hello  "+username+"!"
 
 
 if __name__=='__main__':
