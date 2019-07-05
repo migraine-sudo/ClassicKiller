@@ -1,11 +1,7 @@
 from selenium import webdriver
 from Click.Click import *
 
-def Login():
-        username = raw_input("Please input your username<<")
-        password = raw_input("password<<")
-
-
+def Login(username,password):
 
         browser=webdriver.Firefox()
         browser.get("http://ibook.cslg.cn/Exam")

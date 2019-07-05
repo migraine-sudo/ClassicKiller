@@ -39,15 +39,30 @@ def main():
         model = Model()
         if model=='1':#常规模式
             #调用登陆模块
-            browser=Login()
+            username = raw_input("Please input your username<<")
+            password = raw_input("password<<")
             while (True):
-                paperid = raw_input("Please input the ID of your paper<<")
+                printf("Setting Browser...Please Wait", "purple")
+                try :
+                    browser = Login(username,password)
+                except :
+                    BaseException
+                    print("Wrong password!")
+                    username = raw_input("Please reinput your username<<")
+                    password = raw_input("password<<")
+                    continue
+
+                paperid = raw_input("Please input the ID of your paper(enter 0 to exit)<<")
+                if paperid=='0':
+                    break
                 #创建解答模块的实例
                 A=Answer()
                 A.GetAnswer(browser,paperid)
         if model=='2':
             printf("Warning ,this models is still in test!")
-            browser = Login()
+            username = raw_input("Please input your username<<")
+            password = raw_input("password<<")
+            browser = Login(username,password)
             while (True):
                 papers=raw_input("How many papers do you want to Kill<<")
                 for i in range(1,papers):

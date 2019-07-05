@@ -41,13 +41,13 @@ class Answer:
     def get_option_name(self):
         self.soup = BeautifulSoup(self.page_source, 'html.parser')
         option=self.soup.find_all("ol")
-        print option
+        #print option
         option_name_list=[]
         for i in range(2,102): #因为网页源码多了两个 ol标签，导致所有的标签需要往后移动两个（2019.6）
-            print "option=" + str(option[1])
+            #print "option=" + str(option[1])
             #option_name = re.search('name="(.*)" type', str(option[i])).group(1) before 2019.6
             option_name = re.search('name="(.*)" type', str(option[i])).group(1)
-            print "option_name="+str(option_name)
+            #print "option_name="+str(option_name)
             option_name_list.append(option_name)
        # for name in option_name_list:
        #     print "name="+name
@@ -96,17 +96,26 @@ class Answer:
                                 if x == 'D':
                                     print "value=" + str(int(option_value_list[i])+3)
                                     Click_Value(self.browser,str(int(option_value_list[i]) + 3))
-                                if x == 'E':
+                                if x == 'E' and i>60:
                                     print "value=" + str(int(option_value_list[i])+4)
                                     Click_Value(self.browser,str(int(option_value_list[i]) + 4))
+                                #selenium.common.exceptions.NoSuchElementException: Message: Unable to locate element: [id="143517"]
 
             if checksum==1 and i!=100:
                 sleep(0.1)
-                Click_Next(self.browser)#下一题
+                try:
+                    Click_Next(self.browser)#下一题
+                except:
+                    BaseException
+                #selenium.common.exceptions.ElementNotInteractableException: Message: Element <button class="btn btn-success next-btn"> could not be scrolled into view
+
             elif checksum==0 and i!=100:
                 Click_Value(self.browser, str(int(option_value_list[i]) + 1))#如果没搜到答案，选B
                 sleep(0.1)
-                Click_Next(self.browser)#下一题
+                try:
+                    Click_Next(self.browser)#下一题
+                except:
+                    BaseException
             else:
                 printf ("finish!",'purple')
 
@@ -124,6 +133,6 @@ class Answer:
 
         self.get_answer(question_list,option_name_list,option_value_list)
 
-        raw_input("请等待到交卷时间。。。")
+        raw_input("请等待到交卷时间。。。\n Enter->继续做题")
         #browser.close()
 
