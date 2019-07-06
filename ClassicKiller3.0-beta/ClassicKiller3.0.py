@@ -86,26 +86,23 @@ def Login_GUI():
 
 
 def GetUser():  # call back
+    # 调用登陆模块
     username = entry1.get()
     password = entry2.get()
     print "Hello " + username + "!"
     printf("Setting Browser...Please Wait", "purple")
-    global browser
+
     try:
         browser = Login(username, password)
     except:
         BaseException
         print("Wrong password!")
-        username = entry1.get()
-        password = entry2.get()
 
 def GetPaper():
-        x=entry_paper.get()
-        paperid=int(x)
 
         # 多线程2019.7.5
         try:
-            thread.start_new_thread(ModelOne, (browser, paperid))
+            thread.start_new_thread(ModelOne,("argc","argv"))
             printf("The Thread is Working ...")
             time.sleep(1)
         except:
@@ -115,10 +112,24 @@ def GetPaper():
 
 
 
-def ModelOne(browser,paperid):
+def ModelOne(argc,argv):
     # 调用登陆模块
-        A = Answer()
-        A.GetAnswer(browser, paperid)
+    username = entry1.get()
+    password = entry2.get()
+    print "Hello " + username + "!"
+    printf("Setting Browser...Please Wait", "purple")
+
+    try:
+        browser = Login(username, password)
+    except:
+        BaseException
+        print("Wrong password!")
+
+    x = entry_paper.get()
+    paperid = int(x)
+
+    A = Answer()
+    A.GetAnswer(browser, paperid)
 
 
 def main():

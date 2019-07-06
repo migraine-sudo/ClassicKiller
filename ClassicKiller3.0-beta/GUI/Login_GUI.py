@@ -5,8 +5,8 @@ from Tkinter import *
 #GUI
 
 def Login():
-        global username;
-        global password;
+        global username
+        global password
         win=Tk()
         win.title("ClassicKiller")
         win.geometry("400x400+200+50")
